@@ -4,6 +4,8 @@
 
 #page-shell {
   min-height: 100vh;
+  min-width: 0;
+  overflow-x: clip;
 }
 
 .site-container {
@@ -11,19 +13,25 @@
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.7fr);
   gap: clamp(3rem, 8vw, 8rem);
   align-items: start;
+  min-width: 0;
 }
 
 .desktop-sidebar {
+  min-width: 0;
   padding: 3rem 0;
 }
 
 .main-content {
   min-width: 0;
+  max-width: 100%;
 }
 
 .content-section {
   padding: clamp(5rem, 11vw, 9rem) 0 0;
   scroll-margin-top: 2rem;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .contact-section {
@@ -39,6 +47,8 @@
 @media (max-width: 900px) {
   .site-container {
     display: block;
+    width: 100%;
+    max-width: 100%;
     padding-inline: clamp(1.25rem, 5vw, 3rem);
   }
 
