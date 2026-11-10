@@ -2,6 +2,10 @@
 
 A responsive personal portfolio built with React, Vite, and Material UI.
 
+## Live Demo
+
+[homepage-alpha-steel.vercel.app](https://homepage-alpha-steel.vercel.app/)
+
 ## Structure
 
 - `src/data/portfolioData.js` — centralized portfolio content.
